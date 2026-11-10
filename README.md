@@ -17,12 +17,23 @@ En statisk hemsida för GitHub Pages. Ingen installation eller byggprocess behö
 - inbjudningskort-original.jpg: inbjudningskortet i originalupplösning.
 - .nojekyll: gör att GitHub Pages serverar filerna utan Jekyll-bearbetning.
 
-## Innan ni delar länken med gäster
+## Aktivera OSA före användning
 
-Hemsidan innehåller fortfarande exempeluppgifter för vigselplats, festlokal, tider, klädsel och OSA-datum. OSA-knappen använder exempeladressen hej@modestyochelia.se. Ändra dessa uppgifter i index.html till era riktiga uppgifter. Knappen öppnar besökarens e-postprogram; sidan sparar inga svar i en databas.
+OSA skickas direkt från hemsidan via FormSubmit till pannanikaklet@gmail.com. Gästerna stannar kvar på sidan och ser en bekräftelse när tjänsten har accepterat svaret.
 
-Kortets text och bild är oförändrade. Övriga fotografier hämtas från Unsplash och typsnitt från Google Fonts, så dessa delar behöver internetanslutning.
+1. Publicera det uppdaterade paketet på GitHub Pages.
+2. Skicka ett tydligt märkt testsvar från den publicerade sidan.
+3. Öppna aktiveringsmejlet från FormSubmit i pannanikaklet@gmail.com och bekräfta mottagaradressen. Kontrollera även skräpposten.
+4. Skicka ett nytt testsvar och kontrollera att det kommer fram innan ni delar sidan med gästerna. Utgå inte från att det första svaret levereras före aktivering.
+
+Aktivering och faktisk mejlleverans är inte verifierade i detta paket. Formuläret behöver internet och en publicerad webbplats (eller lokal webbserver); öppna inte index.html direkt som fil för inskickning.
+
+FormSubmit behandlar formulärets uppgifter och vidarebefordrar svaren med e-post. Vid fel behålls uppgifterna i formuläret. Kartor hämtas från Google Maps, typsnitt från Google Fonts. Kortbilden och toppbilden ingår lokalt.
 
 ## Uppdatera
 
 Ändra index.html och ladda upp den nya versionen till samma repository. GitHub Pages publicerar ändringarna efter att de sparats på main.
+
+Toppbild: modesty-elias-toppbild.jpg. Ladda upp den tillsammans med index.html och inbjudningskort-original.jpg.
+
+Bilden i avsnittet Här ses vi heter har-ses-vi.jpg och ska också laddas upp till repositoryts rot.
