@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#efeee9">
 <title>Vårt bröllop — Modesty &amp; Elias</title>
+<link rel="preconnect" href="https://formsubmit.co" crossorigin>
 <meta name="description" content="Välkommen att fira vår bröllopsdag med oss.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Italiana&family=Cinzel:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
@@ -46,17 +47,25 @@ h3{font-size:clamp(1.15rem,2vw,1.5rem);line-height:1.4;letter-spacing:.015em}
 
 /* The heading receives focus after opening for screen readers, without a visible ring. */
 .hero h1[tabindex="-1"]:focus{outline:none;box-shadow:none}
+
+#rsvp-submit:disabled{opacity:.85}
+#rsvp-form[aria-busy="true"] #rsvp-submit:before{content:"";display:inline-block;width:.9em;height:.9em;margin-right:.7em;border:1px solid currentColor;border-right-color:transparent;border-radius:50%;vertical-align:middle;animation:rsvp-spin .8s linear infinite}
+#rsvp-status{min-height:3.6em}
+@keyframes rsvp-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){#rsvp-form[aria-busy="true"] #rsvp-submit:before{animation:none}}
+
+#bus-options label{display:flex;align-items:flex-start;margin:.8rem 0;line-height:1.6}#bus-options input{flex-shrink:0;margin-top:.25em}
 </style></head><body>
 <div class="invite" id="invite" role="button" tabindex="0" aria-label="Öppna inbjudan"><div class="envelope"><div class="card-face"><img class="invite-photo" src="inbjudningskort-original.jpg" alt="Inbjudan till Modesty och Elias bröllop, 10 juli 2027"></div><div class="card-face card-back" aria-hidden="true"><span class="card-monogram">M &amp; E</span></div></div><div class="open-hint">Tryck var som helst för att öppna</div></div><header class="hero" id="hem"><div><h1>Modesty <span>&amp;</span><br>Elias</h1><p>Vi gifter oss — och vill fira med dig</p></div><div class="date">Lördag 10 juli 2027</div><div class="tag">#ModestyOchElias</div></header>
 <nav class="nav" aria-label="Huvudmeny"><a href="#platser">Hitta hit</a><a href="#praktiskt">Praktisk info</a><a href="#osa">OSA</a></nav>
 <main><section class="section" id="platser"><div class="eyebrow">10 juli 2027</div><h2>Här ses vi</h2><div class="places-layout"><figure class="places-photo"><img src="har-ses-vi.jpg" alt="Modesty och Elias tillsammans på en kullerstensgata" width="1320" height="2299" loading="lazy"></figure><div class="places"><article class="place"><h3>Vigsel</h3><p>Färjevägen 5, Strängnäs</p><iframe title="Karta till vigsel" src="https://maps.google.com/maps?q=F%C3%A4rjev%C3%A4gen%205%2C%20Str%C3%A4ngn%C3%A4s&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/search/?api=1&amp;query=F%C3%A4rjev%C3%A4gen%205%2C%20Str%C3%A4ngn%C3%A4s" target="_blank" rel="noopener">Öppna karta och vägbeskrivning ↗</a></article><article class="place"><h3>Fest</h3><p>Bruksallén 8, Åkers styckebruk</p><iframe title="Karta till fest" src="https://maps.google.com/maps?q=Bruksall%C3%A9n%208%2C%20%C3%85kers%20styckebruk&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/search/?api=1&amp;query=Bruksall%C3%A9n%208%2C%20%C3%85kers%20styckebruk" target="_blank" rel="noopener">Öppna karta och vägbeskrivning ↗</a></article></div></div></section>
-<section class="section details" id="praktiskt"><div><div class="eyebrow">Inför vår dag</div><h2>Bra att veta</h2><p class="copy">Mer information om själva dagen och tider kommer närmare bröllopet.</p></div><div class="copy"><div class="detail"><h3>Klädsel</h3><p>Kostym</p></div><div class="detail"><h3>Boende</h3><p>Ni som inte bor i Strängnäs men är sugna på att sova kvar kan boka rum på Hotel Bishops Arms Strängnäs. Om ni behöver hjälp med detta är ni välkomna att höra av er!</p></div><div class="detail"><h3>En dag för de vuxna</h3><p>Vi tycker jättemycket om era barn, men denna dag får de tyvärr stanna hemma.</p></div><div class="detail"><h3>Buss till festen</h3><p>Ange i ert OSA om ni vill åka buss från vigseln till festen.</p></div><div class="detail"><h3>Tal och överraskningar</h3><p>Vill du hålla tal, uppträda eller göra något annat kul för brudparet under festen? Kontakta våra toastmasters Jakob och Hildur på mejl: <a href="mailto:toastmaster10juli2027@gmail.com" style="overflow-wrap:anywhere">toastmaster10juli2027@gmail.com</a></p></div></div></section>
+<section class="section details" id="praktiskt"><div><div class="eyebrow">Inför vår dag</div><h2>Bra att veta</h2><p class="copy">Mer information om själva dagen och tider kommer närmare bröllopet.</p></div><div class="copy"><div class="detail"><h3>Klädsel</h3><p>Kostym</p></div><div class="detail"><h3>Boende</h3><p>Ni som inte bor i Strängnäs men är sugna på att sova kvar kan boka rum på Hotel Bishops Arms Strängnäs. Om ni behöver hjälp med detta är ni välkomna att höra av er!</p></div><div class="detail"><h3>En dag för de vuxna</h3><p>Vi tycker jättemycket om era barn, men denna dag får de tyvärr stanna hemma.</p></div><div class="detail"><h3>Buss till och från festen</h3><p>Vi kommer boka bussar som tar oss från vigseln i Strängnäs till festlokalen i Åkers Styckebruk och sedan tillbaka till Strängnäs på natten. Fyll i om ni vill ha en plats i bussen när ni OSA:r!</p></div><div class="detail"><h3>Tal och överraskningar</h3><p>Vill du hålla tal, uppträda eller göra något annat kul för brudparet under festen? Kontakta våra toastmasters Jakob och Hildur på mejl: <a href="mailto:toastmaster10juli2027@gmail.com" style="overflow-wrap:anywhere">toastmaster10juli2027@gmail.com</a></p></div></div></section>
 <section class="section rsvp" id="osa"><div class="eyebrow">Vi hoppas att du kommer</div><h2>OSA</h2><p class="rsvp-deadline">Svara senast 1 april 2027</p><p class="copy">Fyll i ett svar per person. Berätta gärna om allergier eller annat vi behöver veta.</p>
 <form id="rsvp-form">
 <label for="guest-name">Namn *</label><input id="guest-name" name="name" autocomplete="name" required maxlength="160">
 <fieldset><legend>Kan du komma? *</legend><label><input type="radio" name="attending" value="Ja" required> Ja, jag kommer gärna</label><label><input type="radio" name="attending" value="Nej" required> Nej, jag kan tyvärr inte komma</label></fieldset>
 <div id="guest-options"><fieldset id="meal-options"><legend>Mat *</legend><label><input type="radio" name="meal" value="Kött" required> Kött</label><label><input type="radio" name="meal" value="Kyckling" required> Kyckling</label><label><input type="radio" name="meal" value="Vegetariskt" required> Vegetariskt</label></fieldset>
-<fieldset id="bus-options"><legend>Vill du åka buss från vigseln till festen? *</legend><label><input type="radio" name="bus" value="Ja" required> Ja</label><label><input type="radio" name="bus" value="Nej" required> Nej</label></fieldset></div>
+<fieldset id="bus-options"><legend>Hur vill du resa till och från festen? *</legend><label><input type="radio" name="bus" value="Jag vill åka buss tur och retur till och från festen." required> <span>Jag vill åka buss tur och retur till och från festen.</span></label><label><input type="radio" name="bus" value="Jag vill enbart åka buss till festen." required> <span>Jag vill enbart åka buss till festen.</span></label><label><input type="radio" name="bus" value="Jag tar mig till och från festen på egen hand." required> <span>Jag tar mig till och från festen på egen hand.</span></label></fieldset></div>
 <label for="guest-message">Annan information till brudparet</label><textarea id="guest-message" name="message" rows="5" maxlength="4000" placeholder="Till exempel allergier, specialkost eller en hälsning"></textarea>
 <p class="form-note" id="delivery-note">Ditt svar skickas till brudparet via FormSubmit när du trycker på Skicka OSA.</p><button class="button" id="rsvp-submit" type="submit">Skicka OSA</button><p id="rsvp-status" role="status" aria-live="polite"></p>
 </form></section></main>
@@ -110,7 +119,7 @@ form.addEventListener('submit',async event=>{
  sending=true;
  submitButton.disabled=true;
  submitButton.textContent='Skickar…';
- statusMessage.textContent='';
+ statusMessage.textContent='Ditt svar skickas. Stanna kvar tills du får en bekräftelse.';
  form.setAttribute('aria-busy','true');
  const data=new FormData(form);
  const payload={
@@ -124,12 +133,14 @@ form.addEventListener('submit',async event=>{
  };
  const controller=new AbortController();
  const timeout=setTimeout(()=>controller.abort(),25000);
+ const slowNotice=setTimeout(()=>{statusMessage.textContent='Det tar lite längre tid än vanligt. Vi väntar fortfarande på bekräftelse – du behöver inte trycka igen.';},5000);
  try{
   const response=await fetch('https://formsubmit.co/ajax/'+RSVP_EMAIL,{
    method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
    body:JSON.stringify(payload),signal:controller.signal
   });
   const result=await response.json();
+  clearTimeout(slowNotice);
   if(!response.ok||!(result.success===true||result.success==='true'))throw new Error('Submission rejected');
   if(/activat|confirm.*email|verify/i.test(result.message||'')){
    statusMessage.textContent='Mottagaradressen behöver aktiveras innan OSA kan tas emot. Kontakta brudparet på '+RSVP_EMAIL+'.';
@@ -143,6 +154,7 @@ form.addEventListener('submit',async event=>{
   statusMessage.textContent='Vi kunde inte bekräfta att ditt OSA kom fram. Dina uppgifter finns kvar. Försök igen eller mejla ditt svar till '+RSVP_EMAIL+'.';
  }finally{
   clearTimeout(timeout);
+  clearTimeout(slowNotice);
   sending=false;
   submitButton.disabled=false;
   submitButton.textContent='Skicka OSA';
